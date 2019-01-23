@@ -3,6 +3,7 @@
 
 <head>
   <title>Test program</title>
+
   <!-- INCLUDE ANGULAR -->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-route.js"></script>
@@ -24,12 +25,15 @@
   <!-- /SPACER COLUMN -->
   <!-- MAIN CONTENT -- WHERE THE VIEWS WILL GO -->
   <div class="mainContent col-md-8 col-sm-12 col-xs-12">
+    <!-- Directive used is ng-repeat, which is basically an advanced for loop. I.E. for each 'thing' in the list 'stuff' -->
     <div ng-repeat="thing in stuff">
       <div class="row">
         <div class="col-md-4">
+          <!-- Print out the value of 'album' for this list item -->
           {{thing.album}}
         </div>
         <div class="col-md-4">
+          <!-- Print out the 'year' value for this list item -->
           {{thing.year}}
         </div>
       </div>
