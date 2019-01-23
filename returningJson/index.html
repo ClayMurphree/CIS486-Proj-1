@@ -22,7 +22,24 @@
 <body>
   <!-- SPACER COLUMN -->
   <div class="col-md-2">
-    {{testVariable}}
+    <div>
+      <!-- Output the testVariable that is defined in mycontroller.js -->
+      {{testVariable}}
+    </div>
+    <br />
+    <br />
+
+    <!-- ng-model is used to bind data in the html portion of an application.
+    Read more about what all it can do here: https://www.w3schools.com/angular/angular_model.asp -->
+    <div>
+      <label>Enter your name:</label>
+      <!-- Define a model and bind it to the input section... -->
+      <input ng-model="username">
+      <p>
+        <!-- ... and display it here -->
+        {{username}}
+      </p>
+    </div>
   </div>
   <!-- /SPACER COLUMN -->
   <!-- MAIN CONTENT -- WHERE THE VIEWS WILL GO -->
@@ -44,6 +61,9 @@
   <!-- /MAIN CONTENT -->
   <!-- SPACER COLUMN -->
   <div class="col-md-2">
+    <!-- Angular can also be used to perform simple operations -->
+    <p>Here is some quick math:</p>
+    <p>1 + 2 = {{1 + 2}}</p>
   </div>
   <!-- /SPACER COLUMN -->
 </body>
