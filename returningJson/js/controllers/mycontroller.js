@@ -1,18 +1,24 @@
 (
   function()
   {
+    // The purpose of "use strict" is to indicate that the code should be executed in "strict mode".
+    // With strict mode, you can not, for example, use undeclared variables.
     'use strict';
 
+    // Declare that we are using out testApp module, and define out dashboardCtrl to call a function called Dashboard
     angular.module('testApp').controller('dashboardCtrl', Dashboard);
 
-    // Dashboard.$inject = ['$scope'];
-
+    // Implement our Dashboard function
     function Dashboard($scope)
     {
+      //Define a simple variable that we can use in the index.html page
       $scope.testVariable = "Hello world";
 
+      // Testing logging something to the console
       console.log("hello world");
 
+      //We define another variable called stuff
+      //This variable is assigned to some json code. Basically we are creating an array of objects
       $scope.stuff = [
       {
         "album": "The White Stripes",
