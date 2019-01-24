@@ -45,15 +45,16 @@
   <!-- MAIN CONTENT -- WHERE THE VIEWS WILL GO -->
   <div class="mainContent col-md-8 col-sm-12 col-xs-12">
     <!-- Directive used is ng-repeat, which is basically an advanced for loop. I.E. for each 'thing' in the list 'stuff' -->
-    <div ng-repeat="thing in stuff">
+    <div ng-repeat="person in people">
       <div class="row">
         <div class="col-md-4">
           <!-- Print out the value of 'album' for this list item -->
-          {{thing.album}}
+          {{person.lastName}}, {{person.firstName}}
         </div>
         <div class="col-md-4">
           <!-- Print out the 'year' value for this list item -->
-          {{thing.year}}
+          <!-- <img ng-src={{person.profilePic}}> -->
+          <h1>{{person.Email}}</h1>
         </div>
       </div>
     </div>
