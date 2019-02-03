@@ -11,6 +11,9 @@
     // Implement our Dashboard function
     function Dashboard($scope)
     {
+      //Variable of Ui-Bootstrap Accordion
+      $scope.oneAtATime = true;
+
       //Define a simple variable that we can use in the index.html page
       $scope.testVariable = "Hello world";
 
