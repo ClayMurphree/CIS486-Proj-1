@@ -26,9 +26,9 @@
     {
       $routeProvider.when
       (
-        '/',
+        '/peopleView',
         {
-          templateUrl: 'views/test.html',
+          templateUrl: 'views/classMembers.html',
           controller: 'mainCtrl'
         }
       )
