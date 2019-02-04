@@ -14,6 +14,7 @@
     (
       'myApp', 
       [
+        'ngAnimate',
         'ngRoute',
         'ngResource',
         'ngRoute',
