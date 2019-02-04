@@ -20,7 +20,7 @@
         "Timestamp": "1/17/2019 17:59:54",
         "firstName": "Franklin",
         "lastName": "Glover",
-        "profilePic": "../img/puppy.JPG",
+        "profilePic": "img/qGlover.jpg",
         "Major": "Computer Information Systems",
         "Where are you from?": "Florence, AL",
         "Email": "quintglover91@gmail.com",
