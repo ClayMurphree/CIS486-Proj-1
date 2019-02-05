@@ -13,8 +13,6 @@
     {
       console.log("Hello world! Angular is working!");
 
-      //We define another variable called stuff
-      //This variable is assigned to some json code. Basically we are creating an array of objects
       $scope.people = [
       {
         "timestamp": "1/17/2019 17:59:54",
@@ -33,7 +31,7 @@
         "link1": "http://quintswebdesign.com/",
         "link2": "",
         "link3": "",
-        "resume": "https://drive.google.com/open?id=14VE6P0rkbwI6PGxgzQ57bc8WkPmKoLGH"
+        "resume": "https://drive.google.com/file/d/17em3RJ64FB1D_3zUmVeq1EJ0-Bptezff/view?usp=sharing"
       },
       {
         "timestamp": "1/18/2019 18:26:48",
