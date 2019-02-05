@@ -32,6 +32,14 @@
           controller: 'mainCtrl'
         }
       )
+      .when
+      (
+        '/modalConcept',
+        {
+          templateUrl: 'views/modalConcept.html',
+          controller: 'mainCtrl'
+        }
+      )
     }
     
   }
