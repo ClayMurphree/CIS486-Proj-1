@@ -1,0 +1,38 @@
+<h2>Modal Example</h2>
+<!-- Trigger the modal with a button -->
+<div ng-repeat="person in people">
+  <img ng-src='{{person.profilePic}}' id="profileImage" data-toggle="modal" data-target="#{{person.firstName}}">
+  <!-- Modal -->
+  <div class="modal fade" id="{{person.firstName}}" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">{{person.firstName}} {{person.lastName}}</h4>
+        </div>
+        <div class="modal-body">
+          <img id="profileImage" class="img-responsive profileImage" ng-src='{{person.profilePic}}'>
+          <div class="col-md-8">
+            <div class="list-group list-group-flush">
+              <a ng-href='mailto:{{person.email}}' class='list-group-item list-group-item-active' ng-if='person.email'><strong>Email: </strong>{{person.email}}</a>
+              <a ng-href='#!/classMembers' class='list-group-item list-group-item-active' ng-if='person.location'><strong>Hometown: </strong>{{person.location}}</a>
+              <a ng-href='#!/classMembers' class='list-group-item list-group-item-active' ng-if='person.ennagram'><strong>Ennagram Result: </strong>{{person.ennagram}}</a>
+              <a ng-href='{{person.github}}' target='_blank' class='list-group-item list-group-item-active' ng-if='person.github'><strong>Github: </strong>{{person.github}}</a>
+              <a ng-href='{{person.linkedIn}}' target='_blank' class='list-group-item list-group-item-active' ng-if='person.linkedIn'><strong>LinkedIn: </strong>{{person.linkedIn}}</a>
+              <a ng-href='{{person.facebook}}' target='_blank' class='list-group-item list-group-item-active' ng-if='person.facebook'><strong>Facebook: </strong>{{person.facebook}}</a>
+              <a ng-href='{{person.instagram}}' target='_blank' class='list-group-item list-group-item-active' ng-if='person.instagram'><strong>Instagram: </strong>{{person.instagram}}</a>
+              <a ng-href='{{person.twitter}}' target='_blank' class='list-group-item list-group-item-active' ng-if='person.twitter'><strong>Twitter: </strong>{{person.twitter}}</a>
+              <a ng-href='{{person.link1}}' target='_blank' class='list-group-item list-group-item-active' ng-if='person.link1'><strong>Project 1: </strong>{{person.link1}}</a>
+              <a ng-href='{{person.link2}}' target='_blank' class='list-group-item list-group-item-active' ng-if='person.link2'><strong>Project 2: </strong>{{person.link2}}</a>
+              <a ng-href='{{person.link3}}' target='_blank' class='list-group-item list-group-item-active' ng-if='person.link3'><strong>Project 3: </strong>{{person.link3}}</a>
+              <a ng-href='{{person.resume}}' target='_blank' class='list-group-item list-group-item-active' ng-if='person.resume'><strong>Resume: </strong>{{person.resume}}</a>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
