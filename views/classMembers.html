@@ -1,7 +1,23 @@
-<div class="container">
+<div class='container'>
   <uib-accordion>
-    <div uib-accordion-group class="panel-default" heading="{{person.firstName}}" ng-repeat="person in people">
-      <img id="profileImage" class="img-responsive profileImage" ng-src='{{person.profilePic}}'>
+    <div uib-accordion-group class='panel-default' heading='{{person.firstName}} {{person.lastName}}' ng-repeat='person in people'>
+      <img id='profileImage' class='img-responsive profileImage' ng-src='{{person.profilePic}}'>
+      <div class='col-md-8'>
+        <div class='list-group list-group-flush'>
+          <a ng-href='mailto:{{person.email}}' class='list-group-item list-group-item-active' ng-if='person.email'><strong>Email: </strong>{{person.email}}</a>
+          <a ng-href='#!/classMembers' class='list-group-item list-group-item-active' ng-if='person.location'><strong>Hometown: </strong>{{person.location}}</a>
+          <a ng-href='#!/classMembers' class='list-group-item list-group-item-active' ng-if='person.ennagram'><strong>Ennagram Result: </strong>{{person.ennagram}}</a>
+          <a ng-href='{{person.github}}' target='_blank' class='list-group-item list-group-item-active' ng-if='person.github'><strong>Github: </strong>{{person.github}}</a>
+          <a ng-href='{{person.linkedIn}}' target='_blank' class='list-group-item list-group-item-active' ng-if='person.linkedIn'><strong>LinkedIn: </strong>{{person.linkedIn}}</a>
+          <a ng-href='{{person.facebook}}' target='_blank' class='list-group-item list-group-item-active' ng-if='person.facebook'><strong>Facebook: </strong>{{person.facebook}}</a>
+          <a ng-href='{{person.instagram}}' target='_blank' class='list-group-item list-group-item-active' ng-if='person.instagram'><strong>Instagram: </strong>{{person.instagram}}</a>
+          <a ng-href='{{person.twitter}}' target='_blank' class='list-group-item list-group-item-active' ng-if='person.twitter'><strong>Twitter: </strong>{{person.twitter}}</a>
+          <a ng-href='{{person.link1}}' target='_blank' class='list-group-item list-group-item-active' ng-if='person.link1'><strong>Project 1: </strong>{{person.link1}}</a>
+          <a ng-href='{{person.link2}}' target='_blank' class='list-group-item list-group-item-active' ng-if='person.link2'><strong>Project 2: </strong>{{person.link2}}</a>
+          <a ng-href='{{person.link3}}' target='_blank' class='list-group-item list-group-item-active' ng-if='person.link3'><strong>Project 3: </strong>{{person.link3}}</a>
+          <a ng-href='{{person.resume}}' target='_blank' class='list-group-item list-group-item-active' ng-if='person.resume'><strong>Resume: </strong>{{person.resume}}</a>
+        </div>
+      </div>
     </div>
   </uib-accordion>
 </div>
