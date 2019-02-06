@@ -189,7 +189,7 @@
         "timestamp": "1/24/2019 15:40:13",
         "firstName": "Clay",
         "lastName": "Murphree",
-        "profilePic": "img/ClayMProfile.jpg",
+        "profilePic": "img/cMurphree.jpg",
         "major": "Computer Information Systems",
         "location": "Huntsville, AL",
         "email": "",
