@@ -32,13 +32,14 @@
   <link rel="stylesheet" href="css/style.css">
   <script src="js/angularScripts/app.js"></script>
   <script src="js/angularScripts/controllers/mainCtrl.js"></script>
+  <script src="js/angularScripts/controllers/dashboard.html"></script>
   <script src="js/angularScripts/routes/routes.js"></script>
 </head>
 
 <body>
   <h1>TCG Agileworks</h1>
   <ul class="navbarUl">
-    <li class="navbarLi"><a class="active" href="#home">Home</a></li>
+    <li class="navbarLi"><a class="active" href="#!/">Home</a></li>
     <li class="navbarLi"><a href="https://www.linkedin.com/">LinkedIn</a></li>
     <li class="navbarLi"><a href="https://www.codepen.io/">CodePen</a></li>
     <li class="navbarLi"><a href="https://www.github.com/">GitHub</a></li>
@@ -46,14 +47,7 @@
     <li class="navbarLi"><a href="#!/modalConcept">Modal Concept</a></li>
   </ul>
   
-  <div class="accordion">
-    <div class="accordion-header">Objective</div>
-    <div class="accordion-content">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</div>
-    <div class="accordion-header">Work Experience</div>
-    <div class="accordion-content">Et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</div>
-    <div class="accordion-header">Education</div>
-    <div class="accordion-content">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur.</div>
-  </div>
+  
   <div ng-view>
 
   </div>
