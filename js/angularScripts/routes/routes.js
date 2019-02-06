@@ -26,6 +26,14 @@
     {
       $routeProvider.when
       (
+        '/',
+        {
+          templateUrl: 'views/dashboard.html',
+          controller: 'mainCtrl'
+        }
+      )
+      .when
+      (
         '/classMembers',
         {
           templateUrl: 'views/classMembers.html',
