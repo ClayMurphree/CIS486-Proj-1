@@ -265,7 +265,7 @@
         "timestamp": "2/5/2019 12:36:35",
         "firstName": "Khalid",
         "lastName": "Hwaifer",
-        "profilePic": "",
+        "profilePic": "img/noNinja.jpg",
         "major": "CIS",
         "location": "Saudi Arabia",
         "email": "khwaifer@una.edu",
