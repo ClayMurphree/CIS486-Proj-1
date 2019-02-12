@@ -40,6 +40,14 @@
           controller: 'mainCtrl'
         }
       )
+	    .when
+		(
+		'/proffesorsPage',
+			{
+				templateUrl: 'views/proffesorsPage.html',
+				controller: 'proffCtrl'
+				}
+		)
     }
     
   }

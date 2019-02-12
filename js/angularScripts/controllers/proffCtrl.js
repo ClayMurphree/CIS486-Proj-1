@@ -12,98 +12,98 @@
     function ProffCtrl($scope)
     {
 		console.log("HELLO WORLD");
-	
+
 $scope.proffesors = [
   {
-    "Name": "Dr. M. Shane Banks",
+    "name": "Dr. M. Shane Banks",
     "Email": "mbanks@una.edu",
     "Image": "",
     "Classification": "Computer Science and Information Systems",
-    "Contact Info": "256-765-4301"
+    "cinfo": "256-765-4301"
   },
   {
-    "Name": "Mr. Matt Colburn",
+    "name": "Mr. Matt Colburn",
     "Email": "jmcolburn@una.edu",
     "Image": "",
     "Classification": "Computer Information Systems",
-    "Contact Info": "256-765-4955"
+    "cinfo": "256-765-4955"
   },
   {
-    "Name": "Dr. John Crabtree",
+    "name": "Dr. John Crabtree",
     "Email": "jcrabtree@una.edu",
     "Image": "",
     "Classification": "Computer Information Systems",
-    "Contact Info": "256-765-4464"
+    "cinfo": "256-765-4464"
   },
   {
-    "Name": "Dr. Barry Cumbie",
+    "name": "Dr. Barry Cumbie",
     "Email": "bcumbie@una.edu",
     "Image": "",
     "Classification": "Computer Information Systems",
-    "Contact Info": "256-765-4873"
+    "cinfo": "256-765-4873"
   },
   {
-    "Name": "Mr. Ron Davis",
+    "name": "Mr. Ron Davis",
     "Email": "rddavis@una.edu",
     "Image": "",
     "Classification": "Computer Information Systems",
-    "Contact Info": "256-765-4819"
+    "cinfo": "256-765-4819"
   },
   {
-    "Name": "Ms. Carol Gossett",
+    "name": "Ms. Carol Gossett",
     "Email": "chgossett@una.edu",
     "Image": "",
     "Classification": "Computer Information Systems",
-    "Contact Info": "256-765-4410"
+    "cinfo": "256-765-4410"
   },
   {
-    "Name": "Dr. Janet Jenkins",
+    "name": "Dr. Janet Jenkins",
     "Email": "jltruitt@una.edu",
     "Image": "",
     "Classification": "Computer Science",
-    "Contact Info": "256-765-4601"
+    "cinfo": "256-765-4601"
   },
   {
-    "Name": "Dr. James Jerkins",
+    "name": "Dr. James Jerkins",
     "Email": "jajerkins@una.edu",
     "Image": "",
     "Classification": "Computer Science",
-    "Contact Info": "256-765-5036"
+    "cinfo": "256-765-5036"
   },
   {
-    "Name": "Dr. Andrew Potter",
+    "name": "Dr. Andrew Potter",
     "Email": "apotter1@una.edu",
     "Image": "",
     "Classification": "Computer Information Systems",
-    "Contact Info": "256-765-4665"
+    "cinfo": "256-765-4665"
   },
   {
-    "Name": "Dr. Patricia Roden",
+    "name": "Dr. Patricia Roden",
     "Email": "plrodem@una.edu",
     "Image": "",
     "Classification": "Mathematics/Computer Science",
-    "Contact Info": "256-765-4478"
+    "cinfo": "256-765-4478"
   },
   {
-    "Name": "Dr. Mark Terwilliger",
+    "name": "Dr. Mark Terwilliger",
     "Email": "mterwilliger@una.edu",
     "Image": "",
     "Classification": "Computer Science",
-    "Contact Info": "256-765-4828"
+    "cinfo": "256-765-4828"
   },
   {
-    "Name": "Dr. Jason Watson",
+    "name": "Dr. Jason Watson",
     "Email": "jwatson5@una.edu",
     "Image": "",
     "Classification": "Computer Information Systems",
-    "Contact Info": "256-765-4689"
+    "cinfo": "256-765-4689"
   },
   {
-    "Name": "Dr. Xihui\"Paul\" Zhang",
+    "name": "Dr. Xihui\"Paul\" Zhang",
     "Email": "xzhang6@una.edu",
     "Image": "",
     "Classification": "Computer Information Systems",
-    "Contact Info": "256-765-4419"
+    "cinfo": "256-765-4419"
   }
 ]
 	}

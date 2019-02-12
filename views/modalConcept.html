@@ -1,8 +1,7 @@
-<h2>Modal Example</h2>
 <!-- Trigger the modal with a button -->
 <div ng-repeat="person in people">
   <img ng-if='person.profilePic' ng-src='{{person.profilePic}}' id="profileImage" data-toggle="modal" data-target="#{{person.firstName}}">
-  <img ng-if='!person.profilePic' src='img/sadGottfried.jpg' id="profileImage" data-toggle="modal" data-target="#{{person.firstName}}">
+  <img ng-if='!person.profilePic' src='img/noNinja.jpg' id="profileImage" data-toggle="modal" data-target="#{{person.firstName}}">
   <!-- Modal -->
   <div class="modal fade" id="{{person.firstName}}" role="dialog">
     <div class="modal-dialog">
@@ -14,7 +13,7 @@
         </div>
         <div class="modal-body">
           <img id="profileImage" class="img-responsive profileImage" ng-if='person.profilePic' ng-src="{{person.profilePic}}">
-          <img id="profileImage" class="img-responsive profileImage" ng-if='!person.profilePic' src="img/sadGottfried.jpg">
+          <img id="profileImage" class="img-responsive profileImage" ng-if='!person.profilePic' src="img/noNinja.jpg">
           <div class="col-md-8">
             <div class="list-group list-group-flush">
               <a ng-href='mailto:{{person.email}}' class='list-group-item list-group-item-active' ng-if='person.email'><strong>Email: </strong>{{person.email}}</a>

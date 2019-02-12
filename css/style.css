@@ -113,3 +113,17 @@ li a:hover:not(.active) {
   float: right !important;
   border-radius: 10px;
 }
+
+.proffBox
+{
+  font-family: 'Nunito', sans-serif;
+  font-size: 3rem;
+  padding: 3px;
+  display: block;
+  width: 75%;
+  height: 250px;
+  background-color: white;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 5px;
+}
