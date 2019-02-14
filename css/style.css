@@ -1,22 +1,22 @@
 html {
-    min-height: 100%;
-    font-family: 'Nunito', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  min-height: 100%;
+  font-family: 'Nunito', sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
-    background: linear-gradient(to bottom right, #3D4258, #6670A0, #9688B4);
-    line-height: 1.5;
+  background: linear-gradient(to bottom right, #3D4258, #6670A0, #9688B4);
+  line-height: 1.5;
 }
 
 h1 {
-    font-weight: 200;
-    font-size: 3rem;
-    color: white;
-    text-align: center;
+  font-weight: 200;
+  font-size: 3rem;
+  color: white;
+  text-align: center;
 }
 
-h2{
+h2 {
   font-weight: 100;
   font-size: 1.5rem;
   color: white;
@@ -27,82 +27,89 @@ h2{
 
 
 .accordion {
-    background: linear-gradient(to bottom right, white, #F8F8F8);
-    max-width: 400px;
-    background: white;
-    margin: 0 auto;
+  background: linear-gradient(to bottom right, white, #F8F8F8);
+  max-width: 400px;
+  background: white;
+  margin: 0 auto;
   box-shadow: 0 15px 20px -15px rgba(0, 0, 0, 0.3), 0 35px 50px -25px rgba(0, 0, 0, 0.3), 0 85px 60px -25px rgba(0, 0, 0, 0.1);
-  
+
 }
 
 .accordion-header {
-    border-bottom: 1px solid #DDE0E7;
-    color: #2a313a;
-    cursor: pointer;
-    font-weight: 700;
-    padding: 1.5rem;
+  border-bottom: 1px solid #DDE0E7;
+  color: #2a313a;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 1.5rem;
 }
 
 .accordion-header:hover {
-    background: #F6F7F9;
+  background: #F6F7F9;
 }
 
 .accordion-content {
-    display: none;
-    border-bottom: 1px solid #DDE0E7;
-    background: #F6F7F9;
-    padding: 1.5rem;
-    color: #4a5666;
+  display: none;
+  border-bottom: 1px solid #DDE0E7;
+  background: #F6F7F9;
+  padding: 1.5rem;
+  color: #4a5666;
 }
 
 .accordion-header::before {
-    content: '';
-    vertical-align: middle;
-    display: inline-block;
-    width: .75rem;
-    height: .75rem;
-    border-radius: 50%;
-    background-color: #B1B5BE;
-    margin-right: .75rem;
+  content: '';
+  vertical-align: middle;
+  display: inline-block;
+  width: .75rem;
+  height: .75rem;
+  border-radius: 50%;
+  background-color: #B1B5BE;
+  margin-right: .75rem;
 }
 
 .active.accordion-header::before {
-    background-color: #FC6468;
+  background-color: #FC6468;
 }
 
-img {
+/*img {
   border-radius: 50%;
   position: relative;
   left: 100px;
   bottom: 175px;
-}
+}*/
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
+.navbarUl {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
   position: relative;
-  bottom: 55px;
+  bottom: 7px;
 }
 
-li {
-    float: left;
+.navbarLi {
+  float: left;
 }
 
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+.navbarLi a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
 li a:hover:not(.active) {
-    background-color: #111;
+  background-color: #111;
 }
 
 .active {
-    background-color: #4CAF50;
+  background-color: #4CAF50;
+}
+
+#profileImage
+{
+  width: 25% !important;
+  float: right !important;
+  border-radius: 10px;
 }

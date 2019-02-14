@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <!-- Define that the app is going to be testApp and the controller (the js file that will influence this page) to be dashboardCtrl -->
-<html ng-app="testApp" id="ng-app" ng-controller="dashboardCtrl">
+<html ng-app="testApp" id="ng-app" ng-controller="dashboardCtrl" lang="en">
 
 <head>
+  <meta charset="utf-8">
   <title>Test program</title>
 
   <!-- INCLUDE ANGULAR -->
@@ -20,33 +21,7 @@
 </head>
 
 <body>
-  <h1>Hello TCG AgileWorks!</h1>
-  <!-- SPACER COLUMN -->
-  <div class="col-md-2">
-    <div>
-      <!-- Output the testVariable that is defined in mycontroller.js -->
-      {{testVariable}}
-    </div>
-    <br />
-    <br />
-
-    <!-- ng-model is used to bind data in the html portion of an application.
-    Read more about what all it can do here: https://www.w3schools.com/angular/angular_model.asp -->
-    <div>
-      <label>Enter your name:</label>
-      <!-- Define a model and bind it to the input section... -->
-      <input ng-model="username">
-      <p>
-        <!-- ... and display it here -->
-        {{username}}
-      </p>
-    </div>
-  </div>
-  <!-- /SPACER COLUMN -->
-  <!-- MAIN CONTENT -- WHERE THE VIEWS WILL GO -->
-  <div class="mainContent col-md-8 col-sm-12 col-xs-12">
-    <!-- Directive used is ng-repeat, which is basically an advanced for loop. I.E. for each 'thing' in the list 'stuff' -->
-    <div ng-repeat="person in people">
+  <div ng-repeat="person in people">
       <div class="row">
         <div class="col-md-4">
           <!-- Print out the value of 'album' for this list item -->
@@ -55,19 +30,11 @@
         <div class="col-md-4">
           <!-- Print out the 'year' value for this list item -->
           <!-- <img ng-src={{person.profilePic}}> -->
-          <h1>{{person.Email}}</h1>
+          <img style="width: 25px; height: auto;" ng-src='{{person.profilePic}}'>
         </div>
       </div>
     </div>
   </div>
-  <!-- /MAIN CONTENT -->
-  <!-- SPACER COLUMN -->
-  <div class="col-md-2">
-    <!-- Angular can also be used to perform simple operations -->
-    <p>Here is some quick math:</p>
-    <p>1 + 2 = {{1 + 2}}</p>
-  </div>
-  <!-- /SPACER COLUMN -->
 </body>
 
 </html>

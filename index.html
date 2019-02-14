@@ -1,51 +1,59 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en" ng-app="myApp" id="ng-app" ng-controller="mainCtrl">
 
 <head>
   <meta charset="UTF-8">
   <title>cis486</title>
+  <!-- INCLUDE BOOTSTRAP -->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <!-- INCLUDE ANGULARJS -->
+  <!-- <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-animate.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-route.js"></script>
   
-  
-  
-      <link rel="stylesheet" href="css/style.css">
-
-  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-sanitize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.13.2/ui-bootstrap-tpls.min.js"></script>
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-animate.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-sanitize.js"></script>
+  <script src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.5.0.js"></script>
+  <link href="https://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-route.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-resource.js"></script>
+  <!-- INCLUDE JQUERY -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- INCLUDE FONTAWESOME -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <!-- PROJECT INCLUDES -->
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/angularScripts/app.js"></script>
+  <script src="js/angularScripts/controllers/mainCtrl.js"></script>
+  <script src="js/angularScripts/controllers/dashboard.html"></script>
+  <script src="js/angularScripts/routes/routes.js"></script>
 </head>
 
 <body>
+  <h1>TCG Agileworks</h1>
+  <ul class="navbarUl">
+    <li class="navbarLi"><a class="active" href="#!/">Home</a></li>
+    <li class="navbarLi"><a href="https://www.linkedin.com/">LinkedIn</a></li>
+    <li class="navbarLi"><a href="https://www.codepen.io/">CodePen</a></li>
+    <li class="navbarLi"><a href="https://www.github.com/">GitHub</a></li>
+    <li class="navbarLi"><a href="#!/classMembers">List of Class Members</a></li>
+    <li class="navbarLi"><a href="#!/modalConcept">Modal Concept</a></li>
+	<li class="navbarLi"><a href="#!/meettheTeam">Meet the Team</a></li>
 
-  
- <h1>TCG Agileworks</h1>
-
-
-
-
-<ul>
-  <li><a class="active" href="#home">Home</a></li>
-  <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
-  <li><a href="https://www.codepen.io/">CodePen</a></li>
-  <li><a href="https://www.github.com/">GitHub</a></li>
-</ul>
-
-
-<div class="accordion">
-    <div class="accordion-header">Objective</div>
-    <div class="accordion-content">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</div>
-
-    <div class="accordion-header">Work Experience</div>
-    <div class="accordion-content">Et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</div>
-
-    <div class="accordion-header">Education</div>
-    <div class="accordion-content">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur.</div>
-</div>
+  </ul>
   
   
+  <div ng-view>
 
-    <script  src="js/index.js"></script>
-
-
-
-
+  </div>
+  <script src="js/index.js"></script>
 </body>
 
 </html>

@@ -11,6 +11,9 @@
     // Implement our Dashboard function
     function Dashboard($scope)
     {
+      //Variable of Ui-Bootstrap Accordion
+      $scope.oneAtATime = true;
+
       //Define a simple variable that we can use in the index.html page
       $scope.testVariable = "Hello world";
 
@@ -24,7 +27,7 @@
     "Timestamp": "1/17/2019 17:59:54",
     "firstName": "Franklin",
     "lastName": "Glover",
-    "profilePic": "https://drive.google.com/open?id=1mu_fbyegIq0sccRsCoKxSHAlKXbkwESE",
+    "profilePic": "../img/puppy.JPG",
     "Major": "Computer Information Systems",
     "Where are you from?": "Florence, AL",
     "Email": "quintglover91@gmail.com",
@@ -43,7 +46,7 @@
     "Timestamp": "1/18/2019 18:26:48",
     "firstName": "Kevin",
     "lastName": "Paskevicius",
-    "profilePic": "https://drive.google.com/open?id=1PS-bFo2-D51DFnT2wEavCFUvuRme5Snd",
+    "profilePic": "https://drive.google.com/open?id=1PS-bFo2-D51DFnT2wEavCFUvuRme5Snd.png",
     "Major": "Computer Information Systems",
     "Where are you from?": "Spotsylvania, VA",
     "Email": "kpaskevicius@una.edu",
