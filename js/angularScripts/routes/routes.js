@@ -47,7 +47,14 @@
           templateUrl: 'views/modalConcept.html',
           controller: 'mainCtrl'
         }
-      )
+      ).when
+	  (
+	  '/champions',
+	  {
+		  templateUrl: 'views/champions.html',
+		  controller: 'mainCtrl'
+	  }
+	  )
     }
     
   }
