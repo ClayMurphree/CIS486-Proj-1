@@ -107,6 +107,14 @@ li a:hover:not(.active) {
   background-color: #4CAF50;
 }
 
+.vid {
+ position: fixed;
+ top: 50%;
+ left: 50%;
+ /* bring your own prefixes */
+ transform: translate(-50%, -50%);
+}
+
 #profileImage
 {
   width: 25% !important;
