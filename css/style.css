@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  background: linear-gradient(to bottom right, #3D4258, #6670A0, #9688B4);
+  background: linear-gradient(to bottom right, #252131);
   line-height: 1.5;
 }
 
@@ -62,7 +62,7 @@ h2 {
   width: .75rem;
   height: .75rem;
   border-radius: 50%;
-  background-color: #B1B5BE;
+  background-color: #8E86A7;
   margin-right: .75rem;
 }
 
@@ -82,7 +82,7 @@ h2 {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: #1C1925;
   position: relative;
   bottom: 7px;
 }
@@ -104,7 +104,7 @@ li a:hover:not(.active) {
 }
 
 .active {
-  background-color: #4CAF50;
+  background-color: #8E86A7;
 }
 
 .vid {
