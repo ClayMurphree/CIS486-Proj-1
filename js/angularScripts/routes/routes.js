@@ -4,7 +4,7 @@
   Author: Quint Glover
 
   Copyright (c) 2019 University of North Alabama
-  
+
 \***                                          ***/
 
 (
@@ -56,8 +56,16 @@
 		  controller: 'mainCtrl'
 		}
 	  )
+    .when
+    (
+      '/trophyRoom',
+      {
+        templateUrl: 'views/trophyRoom.html',
+        controller: 'mainCtrl'
+      }
+    )
     }
-    
+
   }
 )
 (
