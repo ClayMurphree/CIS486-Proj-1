@@ -1,9 +1,12 @@
-/** 
-The Undefeated Style Guide. 
 
-Start at bottom.
-**/
-@import url('https://fonts.googleapis.com/css?family=Pridi');
+
+
+
+/*The Undefeated Color Palette Guide Line
+  Rasisin Black #252131
+  Dark-color: #1C1925 (Eerie Black)
+  Medium-color: #8E86A7 (Gray- Blue)
+  Light-color: #FOEFF4 (Anti- Flash White)*/
 
 html {
   min-height: 100%;
@@ -127,9 +130,4 @@ li a:hover:not(.active) {
   width: 25% !important;
   float: right !important;
   border-radius: 10px;
-}
-
-/** Style Guide Starts Here **/
-html,h1,h2,h3,body{
-	font-family: 'Pridi', serif;
 }
