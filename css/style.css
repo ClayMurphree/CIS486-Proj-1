@@ -117,13 +117,16 @@ li a:hover:not(.active) {
   background-color: #8E86A7;
 }
 
-.vid {
- position: fixed;
- top: 50%;
- left: 50%;
- /* bring your own prefixes */
- transform: translate(-50%, -50%);
+#anthem {
+  max-width: 600px;
+  background: linear-gradient(to bottom right, white, #F8F8F8);
+  background: #FOEFF4;
+  margin: 0 auto;
+  box-shadow: 0 15px 20px -15px rgba(0, 0, 0, 0.3), 0 35px 50px -25px rgba(0, 0, 0, 0.3), 0 85px 60px -25px rgba(0, 0, 0, 0.1);
+  font-family: 'Nunito', sans-serif;
+
 }
+
 
 #profileImage
 {
