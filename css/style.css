@@ -318,3 +318,13 @@ li a:hover:not(.active) {
   float: right !important;
   border-radius: 10px;
 }
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
