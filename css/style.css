@@ -1,5 +1,6 @@
 
-
+/*The Undefeated Logo lines 16-197
+*/
 
 
 /*The Undefeated Color Palette Guide Line
@@ -12,6 +13,189 @@ html {
   min-height: 100%;
   font-family: 'Nunito', sans-serif;
   -webkit-font-smoothing: antialiased;
+}
+@import url(https://fonts.googleapis.com/css?family=Signika+Negative:700|Signika:700);
+.box {
+  position:relative;
+  width:44px;
+  height:130px;
+  background:#ACE0F8;
+  border-left:solid #E3F4FD 10px;
+  border-top:solid #E3F4FD 10px;
+  border-bottom:solid #E3F4FD 10px;
+  border-bottom-left-radius: 95px;
+  border-top-left-radius: 5px;
+}
+.box:before {
+  content:'';
+  position:absolute;
+  top:130px;
+  left:44px;
+  height:10px;
+  width:11px;
+  background:#E3F4FD;
+  border-right: solid 11px #C8EAFC;
+}
+.box:after {
+  content:'';
+  position:absolute;
+  top:0;
+  left:44px;
+  width:20px;
+  height:125px; 
+  border-left:11px solid #ACE0F8;
+  border-top:5px solid transparent;
+}
+.box2{
+  position:absolute;
+  top:8px;
+  left:84px;
+  width:44px;
+  height:130px;
+  background:#72D0F5;
+  border-right:solid #C8EAFC 10px;
+  border-top:solid #C8EAFC 10px;
+  border-bottom:solid #C8EAFC 10px;
+  border-bottom-right-radius: 95px;
+  border-top-right-radius: 5px;
+}
+.top {
+  position:absolute;
+  top:11px;
+  left:62px;
+  height:10px;
+  width:11px;
+  background:#E3F4FD;
+  transform: skew(0deg, 25deg) ;
+-webkit-transform: skew(0deg, 25deg) ;
+-moz-transform: skew(0deg, 25deg) ;
+-o-transform: skew(0deg, 25deg) ;
+-ms-transform: skew(0deg, 25deg) ;
+}
+.top:before {
+  content:'';
+  position:absolute;
+  top:-5px;
+  left:11px;
+  height:10px;
+  width:11px;
+  background:#C8EAFC;
+  transform: skew(0deg, -42deg) ;
+-webkit-transform: skew(0deg, -42deg) ;
+-moz-transform: skew(0deg, -42deg) ;
+-o-transform: skew(0deg, -42deg) ;
+-ms-transform: skew(0deg, -42deg) ;
+}
+.box2:after{
+  content:'';
+  position:absolute;
+  top:0;
+  left:-11px;
+  width:0px;
+  height:125px; 
+  border-right:11px solid #72D0F5;
+  border-top:5px solid transparent;
+}
+.u {
+  font-family: 'Signika Negative', sans-serif;
+  font-size:8.5em;
+  color:#FFFFFF;
+  position:absolute;
+  top:2px;
+  left:27px;
+}
+.u:before {
+  content:'';
+  position:absolute;
+  top:28px;
+  left:1px;
+  background:#fff;
+  height:17px;
+      width:34px;
+     border-radius: 35px 35px 0 0;
+     -moz-border-radius: 35px 35px 0 0;
+     -webkit-border-radius: 35px 35px 0 0;
+  transform: rotate(35deg) ;
+-webkit-transform: rotate(35deg) ;
+-moz-transform: rotate(35deg) ;
+-o-transform: rotate(35deg) ;
+-ms-transform: rotate(35deg) ;
+}
+.u:after {
+  content:'';
+  background:#ACE0F8;
+  content:'';
+  position:absolute;
+  top:36px;
+  left:-16px;
+  height:17px;
+      width:34px;
+     border-radius: 35px 35px 0 0;
+     -moz-border-radius: 35px 35px 0 0;
+     -webkit-border-radius: 35px 35px 0 0;
+  transform: rotate(90deg) ;
+-webkit-transform: rotate(90deg) ;
+-moz-transform: rotate(90deg) ;
+-o-transform: rotate(90deg) ;
+-ms-transform: rotate(90deg) ;
+}
+.u:before {
+  content:'';
+  position:absolute;
+  top:28px;
+  left:1px;
+  background:#fff;
+  height:17px;
+      width:34px;
+     border-radius: 35px 35px 0 0;
+     -moz-border-radius: 35px 35px 0 0;
+     -webkit-border-radius: 35px 35px 0 0;
+  transform: rotate(35deg) ;
+-webkit-transform: rotate(35deg) ;
+-moz-transform: rotate(35deg) ;
+-o-transform: rotate(35deg) ;
+-ms-transform: rotate(35deg) ;
+}
+.u:before {
+  content:'';
+  position:absolute;
+  top:28px;
+  left:1px;
+  background:#fff;
+  height:17px;
+      width:34px;
+     border-radius: 35px 35px 0 0;
+     -moz-border-radius: 35px 35px 0 0;
+     -webkit-border-radius: 35px 35px 0 0;
+  transform: rotate(35deg) ;
+-webkit-transform: rotate(35deg) ;
+-moz-transform: rotate(35deg) ;
+-o-transform: rotate(35deg) ;
+-ms-transform: rotate(35deg) ;
+}
+.u:before {
+  content:'';
+  position:absolute;
+  top:28px;
+  left:1px;
+  background:#fff;
+  height:17px;
+      width:34px;
+     border-radius: 35px 35px 0 0;
+     -moz-border-radius: 35px 35px 0 0;
+     -webkit-border-radius: 35px 35px 0 0;
+  transform: rotate(35deg) ;
+-webkit-transform: rotate(35deg) ;
+-moz-transform: rotate(35deg) ;
+-o-transform: rotate(35deg) ;
+-ms-transform: rotate(35deg) ;
+}
+.undefeated:before {
+  content:'';
+  position:absolute;
+  top:28px;
+  left:1px;
+  background:#fff;
 }
 
 body {
@@ -133,4 +317,14 @@ li a:hover:not(.active) {
   width: 25% !important;
   float: right !important;
   border-radius: 10px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
 }
