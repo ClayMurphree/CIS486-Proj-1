@@ -72,6 +72,14 @@
         controller: 'classGuideCtrl'
       }
     )
+    .when
+    (
+      '/resources',
+      {
+        templateUrl: 'views/resources.html',
+        controller: 'resourceCtrl'
+      }
+    )
     }
 
   }
