@@ -64,6 +64,14 @@
         controller: 'mainCtrl'
       }
     )
+    .when
+    (
+      '/classGuide',
+      {
+        templateUrl: 'views/classGuide.html',
+        controller: 'classGuideCtrl'
+      }
+    )
     }
 
   }
