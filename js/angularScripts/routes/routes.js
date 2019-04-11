@@ -53,7 +53,7 @@
 	  '/champions',
 		{
 		  templateUrl: 'views/champions.html',
-		  controller: 'mainCtrl'
+		  controller: 'playlistCtrl'
 		}
 	  )
     .when
