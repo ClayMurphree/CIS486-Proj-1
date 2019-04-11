@@ -2,7 +2,7 @@
 <div id="anthem" class="container text-center">
   <h1> Class Anthem </h1>
   <p id="test"> We Are the Champions by Queen is the class anthem for the Spring 2019 class of CIS 486. The anthem should be played at 4:45 every Tuesday and Thursday to signal the end of class. The song was originally picked by Dr. Cumbie. </p>
-  <iframe id="link" width="560" height="315" frameborder="0" src= '"' + {{video[5].link}} + '"' allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe id="link" width="560" height="315" frameborder="0" src="https://www.youtube.com/embed/videoseries?list=PLl3jogvfmAWWzH3OFxVvVLwZUuRzD2GRF&autoplay=1&index=0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   <h3> <strong> Version </strong></h3>
   <p id="version">  </p>
   </div>
@@ -20,8 +20,8 @@ function test() {
   //Prints out a string with a random index between 1 and 6 
   //if we can turn this string into the link on the youtube src then it will play randomly 
   
-	var randIndex = "https://www.youtube.com/embed/videoseries?list=PLl3jogvfmAWWzH3OFxVvVLwZUuRzD2GRF&autoplay=1&index=" + num; 
-	//var randIndex = "https://www.youtube.com/embed/KHHqPTQDIlo?&autoplay=1"; 
+  var randIndex = "https://www.youtube.com/embed/videoseries?list=PLl3jogvfmAWWzH3OFxVvVLwZUuRzD2GRF&autoplay=1&index=" + num; 
+  //var randIndex = "https://www.youtube.com/embed/KHHqPTQDIlo?&autoplay=1"; 
   document.getElementById("version").innerHTML = newTitle;
   document.getElementById("link").setAttribute("src", randIndex);
   
