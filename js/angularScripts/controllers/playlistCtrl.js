@@ -38,17 +38,24 @@
 		]
 		console.log("We still working down here?");
 		var min = 0;
-		var max = $scope.video.length;
+		var max = $scope.video.length - 1;
 		var num = Math.floor(Math.random() * (max - min + 1)) + min;
-		
-		var x = $scope.video[num].link;
-		
+		var randLink = $scope.video[num].link;
+		var autoPlay = "&autoplay=1";
+		//doesnt work, probably because randLinks not a string
+		//randLink.append(autoPlay);
+	
+		console.log(randLink);
+		/*
+		bring up the sce in class seems important 
 		$scope.setVideo = function (x) {
 			$scope.currentVideo = $scope.video[num];
+			this trustResourceUrl seems important as well
 			x = $sce.trustAsResourceUrl($scope.currentProject.url);	
 			console.log(x);
 		}
 		console.log(x);
+		*/
 	}
   }
   )
