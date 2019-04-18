@@ -36,7 +36,6 @@
   <!-- PROJECT INCLUDES -->
   <link rel="stylesheet" href="css/style.css">
   <script src="js/angularScripts/app.js"></script>
-  <script src="js/angularScripts/controllers/playlistCtrl.js"></script>
   <script src="js/angularScripts/controllers/mainCtrl.js"></script>
   <script src="js/angularScripts/controllers/classGuide.js"></script>
   <script src="js/angularScripts/controllers/resources.js"></script>
@@ -45,44 +44,57 @@
 </head>
 
 <body>
-  <h1>The Undefeated</h1>
-  <div class="top"></div>
-  <div class="box"></div>
-  <div class="box2"></div>
-  <div class="u">U</div>
-  <ul class="navbarUl">
-    <li class="navbarLi"><a class="active" href="#!/">Home</a></li>
-    <li class="navbarLi"><a href="https://www.linkedin.com/">LinkedIn</a></li>
-    <li class="navbarLi"><a href="https://www.codepen.io/">CodePen</a></li>
-    <li class="navbarLi"><a href="https://github.com/ClayMurphree/CIS486-Proj-1">GitHub</a></li>
-    <li class="navbarLi"><a href="#!/classMembers">List of Class Members</a></li>
-    <li class="navbarLi"><a href="#!/modalConcept">Modal Concept</a></li>
-    <li class="navbarLi"><a href="https://kpaskevicius.github.io/Trophy_Room/index.html">Trophy Room</a></li>
-    <li class="navbarLi"><a href="#!/champions">Class Anthem</a></li>
-    <li class="navbarLi"><a href="https://benabr.github.io/UNAQR/">QR Project</a></li>	  
-    <li class="navbarLi"><a href="https://docs.google.com/document/d/1o42yuJoCOznrScFvSjgB_8uCDUmu3vZHv8pqEvDZgWE/edit?usp=sharing">Class Memes</a></li>
-    <li class="navbarLi"><a href="https://docs.google.com/document/d/1oDidI80kJHpLB3sUV3mjOOesU5-QYmfdPQ8E5nGoil4/edit?usp=sharing">Client Questions</a></li>
-    <li class="navbarLi"><a href="https://claymurphree.github.io/CIS486-Proj-1//Calendar.html">Calendar</a></li>
-    <li class="navbarLi"><a href="#!/classGuide">Class Guide</a></li>
-    <li class="navbarLi"><a href="https://docs.google.com/document/d/1smnQeyaZcIjnIsRdFyuhcD_SFoZSpfDk2JXAJmA3KJs/edit?usp=sharing">The Undefeated Color and Logo Guide</a></li>
-	<li class="navbarLi"><a href="https://docs.google.com/document/d/1h0B3NhyXh9b3VhpzGYkdoLMNsb6EGoMwj5MyIxkyhnY/edit">Footer Guide</a></li>	
-    <li class="navbarLi"><a href="#!/resources">Online Resources</a></li>
-    <li class="navbarLi"><a href="https://claymurphree.github.io/CIS486-Proj-1//Calendar.html">Calendar</a></li>
-  </ul>
 
+<IMG SRC = "https://raw.githubusercontent.com/ClayMurphree/CIS486-Proj-1/master/img/logo.png" ALT = "Undefeated logo" Width=138 Height=186>
+<!---<div class = "jumbotron"> </div>--->
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">The Undefeated</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Class Resources
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="https://github.com/ClayMurphree/CIS486-Proj-1">GitHub</a></li>
+		  <li ><a href="https://kpaskevicius.github.io/Trophy_Room/index.html">Trophy Room</a></li>
+		  <li ><a href="https://docs.google.com/document/d/1oDidI80kJHpLB3sUV3mjOOesU5-QYmfdPQ8E5nGoil4/edit?usp=sharing">Client Questions</a></li>
+		  <li ><a href="https://docs.google.com/document/d/1o42yuJoCOznrScFvSjgB_8uCDUmu3vZHv8pqEvDZgWE/edit?usp=sharing">Class Memes</a></li>
+		  <li ><a href="#!/classGuide">Class Guide</a></li>
+		  <li ><a href="#!/resources">Online Resources</a></li>
+        </ul>
+      </li>
+	 
+          <li><a href="#!/classMembers">List of Class Members</a></li>
+		  <li><a href="#">Team Members</a></li>
+		  <li class="dropdown">
+		  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Team Projects
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+		<li> <a href="https://claymurphree.github.io/CIS486-Proj-1//Calendar.html">Calendar</a></li>
+		<li ><a href="#!/filler">QR Project</a></li>	
+		<li ><a href="#!/champions">Class Anthem</a></li>
+		</ul>
+		</li>
+
+     
+    </ul>
+  </div>
+</nav>
 
   <div ng-view>
 
   </div>
   
-<!-- Footer -->
-	<section id="footer">
+    	<div class="footer">
 		<div class="container">
 			<div class="row text-center text-xs-center text-sm-left text-md-left">
-				<div class="col-xs-12 col-sm-4 col-md-2">
-
-				</div>
-				<div class="col-xs-12 col-sm-4 col-md-8">
+				<div class="col-xs-12 col-sm-4 col-md-4">
+      	</div>
+				<div class="col-xs-12 col-sm-4 col-md-4">
 					<h5>Quick links</h5>
 
 					<div class="col-md-12">
@@ -96,29 +108,23 @@
 						<li class="list-inline-item"><a href="https://claymurphree.github.io/CIS486-Proj-1/siteInfrastructure.html#!/">Site Infrastructure</a></li>						
 
 						
+
 					</ul>
-					</div>
-
-
 				</div>
-				<div class="col-xs-12 col-sm-4 col-md-2">
-
-				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4">
+        </div>
 			</div>
-			<div class="row">
-
-				</hr>
-			</div>	
+<!-- Additional info, if wanted.
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
-					<p style="color:white"><u><a href="barrycumbie.com">The Undefeated</a></u> is a UNA CIS Capstone team. Currently undefeated.</p>
-					<p class="h6" style="color:white">&copy All right Reserved.<a class="text-white ml-2" href="barrycumbie.com" target="_blank">The Undefeated</a></p>
+					<p><u><a href=""></a></u> </p>
+					<p class="h6">&copy <a class="text-green ml-2" href="" target="_blank"></a></p>
 				</div>
 				</hr>
-			</div>	
+			</div>
+-->			
 		</div>
-	</section>
-	<!-- ./Footer -->
+	</div>
   
   <script src="js/index.js"></script>
 </body>
