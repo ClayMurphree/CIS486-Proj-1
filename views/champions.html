@@ -4,7 +4,6 @@
   <p id="test"> We Are the Champions by Queen is the class anthem for the Spring 2019 class of CIS 486. The anthem should be played at 4:45 every Tuesday and Thursday to signal the end of class. The song was originally picked by Dr. Cumbie. </p>
   <iframe id="link" width="560" height="315" frameborder="0" src="https://www.youtube.com/embed/videoseries?list=PLl3jogvfmAWWzH3OFxVvVLwZUuRzD2GRF&autoplay=1&index=0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   <h3> <strong> Version </strong></h3>
-  <p id="version">  </p>
   </div>
   
 
@@ -15,28 +14,38 @@ function test() {
   var min = 0;
   var max = 5;
   var num = Math.floor(Math.random() * (max - min + 1)) + min;
- // var randVideo = {{video[5].link}};
-  //var newTitle = {{video[5].title;
-  //Prints out a string with a random index between 1 and 6 
-  //if we can turn this string into the link on the youtube src then it will play randomly 
-  
-  var randIndex = "https://www.youtube.com/embed/videoseries?list=PLl3jogvfmAWWzH3OFxVvVLwZUuRzD2GRF&autoplay=1&index=" + num; 
-  //var randIndex = "https://www.youtube.com/embed/KHHqPTQDIlo?&autoplay=1"; 
-  document.getElementById("version").innerHTML = newTitle;
+  var randIndex = "https://www.youtube.com/embed/videoseries?list=PLl3jogvfmAWWzH3OFxVvVLwZUuRzD2GRF&autoplay=1&index=" + num;
+  console.log(randIndex);
   document.getElementById("link").setAttribute("src", randIndex);
   
-  /*
-  get links to each specific video, not the playlist. 
-  load those into an array
-  
-  next card is to do it at a set time...i.e., thursday at 442
-  
-   45432425sadfa 
-   
-
-  */
   
 }
 </script>
 
+
+<!-- 
+	This is the working script for the class anthem. While it works it didnt reach the full functionality we 
+	hoped for. The initial goal was to have these videos transferred into an Array. 
+	If you look under the js/angularScripts/controllers/playList.ctrl you can find our attempt at this, and while
+	we made it pretty close we still couldnt make it that last 1% in time. What we could do:
+	Route this page to the JSON object, and pull the url and the title of the video 
+	Create a working random number generator and pull different arrays from the JSON object
+	append the autoplay function to a url
+	print out objects from the object onto the page
+	Pull the length of the array to make the random number generator scalable 
+	
+	What we couldnt do: 
+	Pass the URL into the iframe in a way that it would accept it. Here are some of the implementations we looked into:
+	assigning $scope.video[randomNumber].title to a variable and using the setAttribute function to change the iframe video in the JSON object (see above)
+	creating a variable in the controller and then having it run in the html page: <iframe src={{x.url}}>
+		for that implementation we looked into angular for some possible solutions changing src to ng-src (as to treat it like an angular object) and other troubleshooting
+		Also for the angular approach we looked into the $sce function, supposedly theres a function in that to make it trust it as a URL but we couldnt get it functioning
+	Changing from an iframe to video tags, this doesnt work because essentially for a video tag we would have to have the video downloaded into the project
+	We tried a few outside packages to alter the way we could handle the iframe such as youtubes-iframe package and an angular package for embeding youtube videos
+	
+	
+
+
+
+-->
 
